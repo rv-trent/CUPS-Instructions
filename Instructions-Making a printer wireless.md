@@ -115,7 +115,7 @@ If you have access to the device list on your local network, for example through
 
 ### Step 1: SSH-ing into your Pi {#step-1:-ssh-ing-into-your-pi}
 
-To connect to your Raspberry Pi and set up its software, you’re going to connect to it through a Secure Shell, or SSH. To do this, open your command prompt as an administrator and run the command ```ssh \[pi\_username\]@\[IP\_address\]. Replace Pi\_username``` with the name of the user account that you created in Raspberry Pi Imager, and IP\_address with the IP that you found at first boot. Remember to not include the brackets in your command.
+To connect to your Raspberry Pi and set up its software, you’re going to connect to it through a Secure Shell, or SSH. To do this, open your command prompt as an administrator and run the command ```ssh [pi_username]@[IP_address]```. Replace pi\_username with the name of the user account that you created in Raspberry Pi Imager, and IP\_address with the IP that you found at first boot. Remember to not include the brackets in your command.
 
 ![][image14]
 
