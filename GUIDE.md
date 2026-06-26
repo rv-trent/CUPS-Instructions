@@ -51,7 +51,11 @@ The [Raspberry Pi Imager](https://www.raspberrypi.com/software/) is a software t
 
 After launch, you will see the “Device” screen. Select the device that describes your Pi. For example, if you have a Raspberry Pi Model 3B+, select “Raspberry Pi 3” as shown. Press “Next”.
 
+![][image13]
+
 Now we will choose the correct operating system to run on your Pi. Start by selecting Raspberry Pi OS (other). This will bring up a second menu.
+
+![][image26]
 
 Under the second menu, select “Raspberry Pi OS Lite (32-bit)”. This OS will run on any required Pi model, but if you know your device supports 64-bit, you may choose “Raspberry Pi OS Lite (64-bit)”
 
@@ -93,7 +97,7 @@ The screen shows two IP addresses, and you need the second IP. An example IP is 
 
 If you have access to the device list on your local network, for example through your router’s management page, locate the Pi there. When you obtain the IP address, record it somewhere since you will need this in later steps.
 
-![][image1]
+![][image20]
 
  Your Pi is now ready to be turned into a server for your printer\!
 
@@ -169,7 +173,11 @@ Next you’ll be asked to select a driver. Install the driver for your printer f
 
 Select OK and you’ll be all set up to use your wired printer wirelessly from your computer\! Make sure your Pi and printer are powered on and connected whenever you plan to print.
 
-[image1]: <./images/image20.png>
+[image20]: <./images/image20.jpg>
+
+[image13]: <./images/image13.png>
+
+[image26]: <./images/image26.png>
 
 [image2]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYAAAAB8CAIAAADvgvA+AAAEd0lEQVR4Xu3YsYscZRzH4e1d0IixCFiEIwRS2GhikU4I+AfElAELbYTYKKSyCVqlPCQWV1jkGos0hkBAAleIhCts0qVM5T9x/m7fu/fem90zJuTuK8nzFMPMO++8cxuYT3Zn9uTJkw8BTtyf23/NLl++PB0GOH4Vn1k/WFtbm78Bzp07N/wLAEkHAZo+qa+v4eMDx25zc7O2Ozs70xMrA3T9+vVr165dunTp/Pnzs9lseHJXq3XHw0ePHtX26dOntb1///7jx49r58KFC31CO3Uyxvt2w8ffU3/zdAh4RTYXpqMLKwI0O2x4cnftLExGqinfLYzjXWWon639mlyX1GHt9zmTw1fizp07z549m46+eIAePnw4HQJehRUBeuuw4cl9TQwfH0haEaDX3vDxgaTpLyyAEyNAQMxzAnTqi+nIS3vvl+nIS/voqyfToVW2t7enQ8D/yUGA3v9jrxG1PfX17mE5/dvu9p3P56d/3R15+7ODabXT5vSRNrO8+/1i/Pfd8Tpbi7z7497ktlQd1qnaWV6q3fHWrVtXr16dr2rNJ9/8vTx4796927dv11W1f/fu3StXrmxtbbUAbS+Mk2tCGxl3yjinLh/P1sq1rbtMps33M9cn13ZjY2Mc6Yuvr6+3pQ4uhjfboQCVU9/ubltH5vspaYe9EU1Fqukjfb9dNdED1PcrQM3yUlWQs2fP7h0ctvbpDxWgDz7+cjJeT3sPUEtAe/5rqUmAauUHDx60CRcvXuyD45xek9bBpgLU97s+sy1Vt67QzBcL1q3bnLb45M8ApgF6oyx/nekqFi1S/9G/LAUc5TnvgEYn8x/48l2O+ir0opZXBrJWBKge1PbM9180W1tbbbxNaIfLlr8y9EvGa2vZ7f2fS218TMMkE9sL88VPm9r2H0TjtDbYRm7evLn8ZWRylxs3bozj448s4CStCFB1ZHu/QeOr3PYGpLZHPbE9Vb0yban5sGa7dnxHUyM9Df0uy9pr4PmQpK5WqPVr8X6q3X1cdj68DOp3rG2v1VH3BY7PigABnAwBAmIECIgRICBGgIAYAQJiBAiIESAgRoCAGAECYgQIiBEgIEaAgBgBAmIECIgRICBGgIAYAQJiBAiIESAgRoCAGAECYgQIiBEgIEaAgBgBAmIECIgRICBGgIAYAQJiBAiIESAgRoCAGAECYgQIiBEgIEaAgBgBAmIECIgRICBGgIAYAQJiBAiIESAgRoCAGAECYgQIiBEgIEaAgBgBAmIECIgRICBGgIAYAQJiBAiIESAgRoCAGAECYgQIiBEgIEaAgBgBAmIECIgRICBGgIAYAQJiBAiIESAgRoCAGAECYgQIiBEgIEaAgBgBAmIECIgRICBGgIAYAQJiBAiIESAgRoCAGAECYgQIiBEgIEaAgBgBAmIECIgRICBGgIAYAQJiBAiIESAgRoCAGAECYgQIiBEgIEaAgBgBAmIECIgRICBGgIAYAQJiBAiIESAgRoCAmNmZM2emYwDHr+Iz29jYmA4DHL/1n37+Bx6jrOCnW7XlAAAAAElFTkSuQmCC>
 
