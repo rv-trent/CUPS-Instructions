@@ -2,7 +2,11 @@
 
 Trenton Hidenfelter, Jacob Hahn
 
-In this document you will be led through the process of setting up a Raspberry Pi to transform a USB printer into a wireless printer.
+In this guide, you will be led through the process of configuring a Raspberry Pi to transform a wired USB printer into a WiFi-enabled printer, which you can print to wirelessly from any device on your network.
+
+
+The guide covers the three major steps needed: configuring your Pi, setting up the printing software, and connecting to it from the computer you want to print from. It’s intended for those with little technical experience, but should be usable for anyone with the parts required.
+
 
 [Making a Wired Printer Wireless using a Raspberry Pi \- Full Setup Guide](#making-a-wired-printer-wireless-using-a-raspberry-pi---full-setup-guide)
 
@@ -10,9 +14,7 @@ In this document you will be led through the process of setting up a Raspberry P
 
 [1\. Preparing the SD Card](#preparing-the-sd-card)
 
-[2\. Modifying the config files](#modifying-the-config-files)
-
-[3\. First time booting of your Pi](#first-time-booting-of-your-pi)
+[2\. First time booting of your Pi](#first-time-booting-of-your-pi)
 
 [Setting up the Printer](#setting-up-the-printer)
 
@@ -79,14 +81,7 @@ Congrats\! You’re now ready to write your OS and settings to your SD card. Ens
 
 This process will take a few minutes, depending on the speed of the card. Let both the write and verify steps complete without interruption.
 
-2. ### Modifying the config files
-
-Before inserting the SD card into the Raspberry Pi, there are some text files that need to be modified. Open the SD card’s folders on your computer and locate and open config.txt.  
-At the end of the document, below where it says \[all\], add *dtoverlay=dwc2* . Save and close that file and locate the file cmdline.txt.
-
-In the file cmdline.txt, after the word “rootwait”, add *modules-load=dwc2,g\_ether* . Save and close that file then eject the SD card from your computer. You are now all set to get your Raspberry Pi up and running so proceed to the next step\!
-
-3. ### First time booting of your Pi
+2. ### First time booting of your Pi
 
 You are now ready to boot up your Pi for the first time\! Now, depending on if you have access to your router settings and can see device IPs through the management tab of your router, this step is going to be slightly different. If you do not have the ability to view all devices connected to your network, you will need to plug your Pi into a screen using an HDMI cable.
 
