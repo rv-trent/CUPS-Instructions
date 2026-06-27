@@ -255,3 +255,9 @@ Select OK and you’ll be all set up to use your wired printer wirelessly from y
 [image25]: <./images/image25.png>
 
 [image7]: <./images/image7.png>
+
+[image23]: <./images/image23.png>
+
+[image36]: <./images/image36.png>
+
+[imagex35]: <./images/imagex35.png>
