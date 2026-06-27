@@ -182,25 +182,37 @@ Once you log in, you’ll be taken to the administration page where you can add 
 
 In the Administration tab, select “Find New Printers”
 
+![][image34]
+
 Next, select “Add This Printer” for whichever printer is plugged into your Raspberry Pi. In the example, it is the Canon LBP6030 printer.
+
+![][image2]
 
 You can now set a custom printer name and description if you so desire, but this is not required and you can choose to continue to the next step without entering anything. Checking “Share This Printer” is also optional because you will be setting this later through a command.
 
+![][image17]
+
 On the next page, you’ll be asked to select the printer driver. You’ll use a “raw queue”, which means the data sent to the printer is exactly what the Pi receives from your computer, without any extra processing. This will mean you’ll need to install a driver onto the client computer you are printing from so that the printer supports the data it is sent, but we’ll handle that later.
 
+![][image24]
+
 To select a raw queue as the driver, find and choose “Raw” from the “Make” dropdown menu, as shown in the first image. Click the continue button. Then, you will see a “Model” dropdown. In this menu, choose “Raw Queue (en)”.
+
+![][image4]
 
 To save the printer and driver, click the “Add Printer” button at the bottom of the options.
 
 Now you'll navigate to the Printers tab in the top bar and select the queue for the printer you just added. Highlight and copy the bold printer name at the top of the page once the queue  has been selected. This will be the printer name you set earlier if you chose a custom one, or the default for your type of printer if you did not.
 
+![][image32]
+
 Switch back to your SSH command prompt. Using the name you just copied, run the command sudo lpadmin ```\-p \[printer\_name\] \-o printer-is-shared=true```. This will make sure the printer is accessible remotely.
 
-![][image8]
+![][image28]
 
 Run the restart command again, and you will be done with the setup\! You can now add the printer to your local computer with the steps below.
 
-![][image9]
+![][image7]
 
 5. ### Adding the Printer to your Computer
 
@@ -261,3 +273,17 @@ Select OK and you’ll be all set up to use your wired printer wirelessly from y
 [image36]: <./images/image36.png>
 
 [imagex35]: <./images/imagex35.png>
+
+[image34]: <./images/image34.png>
+
+[image2]: <./images/image2.png>
+
+[image17]: <./images/image17.png>
+
+[image24]: <./images/image24.png>
+
+[image4]: <./images/image4.png>
+
+[image32]: <./images/image32.png>
+
+[image28]: <./images/image28.png>
