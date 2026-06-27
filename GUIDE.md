@@ -100,12 +100,16 @@ This process will take a few minutes, depending on the speed of the card. Let bo
 
 You are now ready to boot up your Pi for the first time\! Now, depending on if you have access to your router settings and can see device IPs through the management tab of your router, this step is going to be slightly different. If you do not have the ability to view all devices connected to your network, you will need to plug your Pi into a screen using an HDMI cable.
 
+![][image15]
+
 First, insert the micro-SD card into the slot on the bottom of the Pi, boxed in the image. Then, plug in the power supply. The first boot process will take around 3-5 minutes. To confirm that it is finished booting, wait for the green LED on the Pi to stop flashing for at least 10 seconds.
 
 *If your Pi is connected with HDMI:*
 
 If you have your Pi plugged into a screen, it will show information similar to the image below when the boot process is complete.  
 The screen shows two IP addresses, and you need the second IP. An example IP is boxed in the image below. Record the IP address as you will need it for future steps\!
+
+![][image16]
 
 *If you have a device list:*
 
@@ -124,16 +128,20 @@ You will now need to run some commands in your command prompt to set things up. 
 To connect to your Raspberry Pi and set up its software, you’re going to connect to it through a Secure Shell, or SSH. To do this, open your command prompt as an administrator by pressing the WINDOWS key then typing in the search bar “cmd” then clicking the highlighted “Run as administrator” as seen, and run the command ssh \[Pi\_username\]@\[IP\_address\].  
 Replace Pi\_username with the name of the user account that you created in Raspberry Pi Imager, and IP\_address with the IP that you found at first boot. Remember to not include the brackets in your command.
 
+![][image33]
+
 Please note, when it asks for your password, use the password you set for your Raspberry Pi when setting it up. You will not be able to see it while you type it. If you are asked if you want to continue with the connection due to security reasons, type ‘yes’.
+
+![][image21]
 
 2. ### Setting up the Software
 
 The first command will update a software called APT, which comes pre-installed on your Raspberry Pi’s operating system. APT manages the installation of other software on your system, and updating it ensures that it has access to the latest software versions when you use it.  
 To update APT, run sudo apt-get update. It may ask you for your password (as shown below), and you’ll have to enter it. Once again, you will not be able to see your password as you type it. Next, you will be installing the printing system, called CUPS, using APT. This software will allow you to access your printer over Wi-Fi.  
-![][image2]
+![][image35]
 
 To install CUPS, run the command sudo apt-get install cups \-y.  
-![][image3]
+![][image5]
 
 3. ### Setting up the Printer System
 
@@ -142,12 +150,14 @@ First, run sudo usermod \-aG lpadmin \[pi\_username\], which allows you to modif
 ![][image4]
 
 Next, you’re going to enable the sharing and remote access of your printers connected to the Pi by using sudo cupsctl –-share-printers –-remote-any.  
-![][image5]  
+![][image5]
+
 Almost done\! You need to enable the web interface for the printers so you can more easily add new printers and access admin settings. The command to run is sudo cupsctl WebInterface=yes.  
 ![][image6]
 
 To restart the printing service and apply your changes, run sudo systemctl restart cups. You’ll be running this again later and should run it after you make any changes to CUPS through the command prompt.  
-![][image7]  
+![][image7]
+
 You are done with typing commands for a little bit and now need to open your web browser of choice. Then, type \[IP\_address\]:631 into the address bar. Do not close the command prompt window.
 
 From the above page, you’ll go to the “Administration” tab at the top bar. If you see an error about an upgrade being required, just wait a minute and it’ll automatically bring you to the administration page. At this point, you’ll probably see a security warning, but this is a false alert from your browser and is safe to ignore. Click on “Advanced”. then the link at the bottom that says “Proceed”.
@@ -173,7 +183,7 @@ To save the printer and driver, click the “Add Printer” button at the bottom
 Now you'll navigate to the Printers tab in the top bar and select the queue for the printer you just added. Highlight and copy the bold printer name at the top of the page once the queue  has been selected. This will be the printer name you set earlier if you chose a custom one, or the default for your type of printer if you did not.
 
 Switch back to your SSH command prompt. Using the name you just copied, run the command sudo lpadmin \-p \[printer\_name\] \-o printer-is-shared=true. This will make sure the printer is accessible remotely.  
-*![][image8]*
+![][image8]
 
 Run the restart command again, and you will be done with the setup\! You can now add the printer to your local computer with the steps below.
 
@@ -210,3 +220,17 @@ Select OK and you’ll be all set up to use your wired printer wirelessly from y
 [image38]: <./images/image38.png>
 
 [image19]: <./images/image19.png>
+
+[image15]: <./images/image15.png>
+
+[image16]: <./images/image16.png>
+
+[image20]: <./images/image20.png>
+
+[image33]: <./images/image33.png>
+
+[image21]: <./images/image21.png>
+
+[image35]: <./images/image35.png>
+
+[image5]: <./images/image5.png>
